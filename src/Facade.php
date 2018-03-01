@@ -22,7 +22,10 @@ class Facade extends LaravelFacade
         return 'chedianai.carparts';
     }
 
-    public static function CarPart()
+    /**
+     * @return \CarParts\Application
+     */
+    public static function carPart()
     {
         return app('chedianai.carparts');
     }
