@@ -1,0 +1,32 @@
+{
+    "name": "chedianai/laravel-sdk-car-parts",
+    "description": "车型库 sdk for Laravel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Keal",
+            "email": "546487590@qq.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Chedianai\\LaravelCarParts\\": "src/"
+        }
+    },
+    "require": {
+        "chedianai/car-parts-sdk": "^1.0",
+        "illuminate/pagination": "^5.0",
+        "illuminate/support": "^5.0",
+        "illuminate/cache": "^5.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Chedianai\\LaravelCarParts\\ServiceProvider"
+            ],
+            "aliases": {
+                "CarParts": "Chedianai\\LaravelCarParts\\Facade"
+            }
+        }
+    }
+}
