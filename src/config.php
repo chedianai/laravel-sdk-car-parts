@@ -12,8 +12,8 @@ return [
         /*
          * 请求接口密钥
          */
-        'client_id' => env('CART_PARTS_CLIENT_ID', 'CART_PARTS_CLIENT_ID'),
-        'client_secret' => env('CART_PARTS_CLIENT_SECRET', 'CART_PARTS_CLIENT_SECRET'),
+        'client_id' => env('CAR_PARTS_CLIENT_ID', 'CAR_PARTS_CLIENT_ID'),
+        'client_secret' => env('CAR_PARTS_CLIENT_SECRET', 'CAR_PARTS_CLIENT_SECRET'),
 
         /*
          * 指定 API 调用返回结果的类型：collection(default)/array/object/raw/自定义类名
