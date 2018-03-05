@@ -11,8 +11,9 @@ namespace Chedianai\LaravelCarParts;
 use CarParts\Kernel\Contracts\Arrayable;
 use CarParts\Kernel\Contracts\ResponseFormatted;
 use Illuminate\Pagination\LengthAwarePaginator;
+use Illuminate\Support\Collection as LaravelCollection;
 
-class Collection extends \Illuminate\Support\Collection implements Arrayable, ResponseFormatted
+class Collection extends LaravelCollection implements Arrayable, ResponseFormatted
 {
     public function __construct($items)
     {
@@ -37,6 +38,6 @@ class Collection extends \Illuminate\Support\Collection implements Arrayable, Re
                 $this->items['meta']['current_page']);
         }
 
-        return $this->items;
+        return new LaravelCollection($this->items);
     }
 }
