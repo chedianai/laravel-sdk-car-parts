@@ -38,6 +38,6 @@ class Collection extends LaravelCollection implements Arrayable, ResponseFormatt
                 $this->items['meta']['current_page']);
         }
 
-        return new LaravelCollection($this->items);
+        return new LaravelCollection($this->items['data']);
     }
 }
